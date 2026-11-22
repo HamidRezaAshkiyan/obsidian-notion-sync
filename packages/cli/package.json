@@ -1,0 +1,20 @@
+{
+  "name": "@obsidian-notion-sync/cli",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "obsidian-notion": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/index.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@obsidian-notion-sync/core": "1.0.0",
+    "commander": "^13.1.0",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0"
+  }
+}

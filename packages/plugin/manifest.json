@@ -1,0 +1,9 @@
+{
+  "id": "obsidian-notion-sync",
+  "name": "Obsidian Notion Sync",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Share individual Obsidian notes via Notion and incrementally back up or restore your entire vault with full Markdown and attachment support.",
+  "author": "Obsidian Notion Sync",
+  "isDesktopOnly": false
+}

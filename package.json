@@ -1,0 +1,20 @@
+{
+  "name": "obsidian-notion-sync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Share Obsidian notes via Notion and incrementally back up & restore entire vaults.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=@obsidian-notion-sync/core && npm run build --workspace=@obsidian-notion-sync/plugin && npm run build --workspace=@obsidian-notion-sync/cli",
+    "typecheck": "npm run typecheck --workspace=@obsidian-notion-sync/core && npm run typecheck --workspace=@obsidian-notion-sync/plugin && npm run typecheck --workspace=@obsidian-notion-sync/cli",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}
